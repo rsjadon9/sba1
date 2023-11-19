@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT PERSONAL INFORMATION</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../images/portal3.png" class="cover-pic">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./register.html">register</a></li>
+                    <li><a href="./contactUs.html">contact-Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="register">
+            <form>
+                <table class="tableStyle">
+                    <tr>
+                        <td colspan="4" class="tableLableColumn">
+                            <h1>Add Student information</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableLableColumn">First Name</td>
+                        <td class="tableValueColumn"><input type="textbox" id="firstname" required
+                                placeholder="Enter Your First Name" /></td>
+                        <td class="tableLableColumn">Last Name</td>
+                        <td class="tableValueColumn"><input type="textbox" id="lastname" required
+                                placeholder="Enter Your Last Name" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLableColumn">Email Id</td>
+                        <td class="tableValueColumn"><input type="textbox" id="email" required
+                                placeholder="Enter Your Email" /></td>
+                        <td class="tableLableColumn">Phone</td>
+                        <td class="tableValueColumn"><input type="textbox" id="password" required
+                                placeholder="Enter Your PhoneNumber" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLableColumn">Password</td>
+                        <td class="tableValueColumn"><input type="password" id="email" required
+                                placeholder="Enter Your Password" /></td>
+                        <td class="tableLableColumn">Confirm Password</td>
+                        <td class="tableValueColumn"><input type="password" id="password" required
+                                placeholder="Confirm Your Password" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLableColumn">Date of Birth</td>
+                        <td class="tableValueColumn">
+                            <input type="date" />
+                        </td>
+                        <td class="tableLableColumn">Gender</td>
+                        <td class="tableValueColumn">
+                            <input type="radio" id="female" />
+                            <label for="female">Female</label>
+                            <input type="radio" id="male" />
+                            <label for="male">Male</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableLableColumn">City</td>
+                        <td class="tableValueColumn">
+                            <input type="textbox" id="city">
+                        </td>
+                        <td class="tableLableColumn">State</td>
+                        <td class="tableValueColumn">
+                            <select>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableLableColumn">Contact Preference</td>
+                        <td class="tableValueColumn" colspan="3">
+                            <center>
+                                <label for="email">Email</label>
+                                <input type="checkbox" id="email" />
+                                <label for="txt">Text</label>
+                                <input type="checkbox" id="txt" />
+                                <label for="call">Call</label>
+                                <input type="checkbox" id="call" />
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center"><button type="button"
+                                class="btn btn-primary btn-lg">Register</button>
+
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
